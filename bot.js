@@ -4,7 +4,7 @@ const fs = require('fs');
 const moment = require('moment');
 const jimp = require('jimp');
 const Canvas = require('canvas');
-const prefix = '='
+const prefix = 'y'
 
 
 
@@ -13,8 +13,8 @@ client.on('ready', () => {
 });
 
 
-const adminprefix = "-";
-const devs = ['467777208732352512','467777208732352512'];
+const adminprefix = "y";
+const devs = ['408396389291393025'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -34,7 +34,7 @@ client.user.setAvatar(argresult);
       } else     
 if (message.content.startsWith(adminprefix + 'setT')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
+    message.channel.sendMessage(`** :recycle:  تم تغيير تويتش البوت إلى ${argresult}**`)
 }
 });
  
